@@ -1,0 +1,25 @@
+@import "./src/styles.scss"; /* Import custom theme */
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  width: 150px;
+  border-right: 1px solid #D7DBDD;
+  background-color: #FCFDFD;
+  padding: 10px;
+}
+
+.sideBar__item {
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #16A2D7;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sideBar__item.is-side-bar-item-selected {
+  background-color: #EEF3F5;
+  border-radius: 4px;
+}

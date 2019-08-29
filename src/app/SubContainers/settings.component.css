@@ -1,0 +1,13 @@
+.form {
+  width: 600px;
+  /* margin: 20px; */
+  /* padding: 20px; */
+  padding-top: 5px;
+  padding-left: 20px;
+  color: #767C8A;
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.button-row button{
+  margin: 15px 10px 15px 0; /* up right bottom left */
+}

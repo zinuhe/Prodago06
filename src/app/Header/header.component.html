@@ -1,0 +1,25 @@
+<div class="header">
+  <mat-toolbar color="primary">
+    <span>PRODAGO</span>
+    <span style="flex: 1 1 auto;"></span>
+    <!-- Button trigger modal -->
+    <span><fa-icon [icon]="faUser" size="lg" (click)="openSm(content)"></fa-icon></span>
+  </mat-toolbar>
+
+  <!-- Popup modal -->
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Profile</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Language</p>
+      <p>Log out</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" (click)="modal.close('Close click')">Close</button>
+    </div>
+  </ng-template>
+</div>

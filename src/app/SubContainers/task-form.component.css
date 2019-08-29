@@ -1,0 +1,25 @@
+.form {
+  width: 600px;
+  /* margin: 20px; */
+  /* padding: 20px; */
+  padding-top: 5px;
+  padding-left: 20px;
+  color: #767C8A;
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.form_components {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+/* .ng-valid,
+.ng-valid.required {
+  background-color: lightgreen;
+}
+
+.ng-invalid:not(form) {
+  background-color: lightcoral;
+} */

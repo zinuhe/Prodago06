@@ -1,0 +1,75 @@
+<div style="padding-left:20px;"><h1 i18n="@@settingsTitle">{{pageTitle}}</h1>
+
+  <form [formGroup]="settingsForm" (ngSubmit)="onSubmit()" class="form-horizontal form">
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="User Name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Language">
+          <mat-option *ngFor="let language of languages" [value]="language">{{language}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Theme">
+          <mat-option *ngFor="let theme of themes" [value]="theme">{{theme}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="btn-wrapper">
+        <button mat-mini-fab class="btn btn-default" (click)="selectedTheme='default'"></button>
+        <button mat-mini-fab class="btn btn-purple" (click)="selectedTheme='purple'"></button>
+        <button mat-mini-fab class="btn btn-pink" (click)="selectedTheme='pink'"></button>
+        <button mat-mini-fab class="btn btn-deep-orange" (click)="selectedTheme='deep-orange'"></button>
+      </div>
+
+    </div>
+  </form>
+    <!--
+    <fieldset>
+      <div class="form-group row padding_top_10">
+        <label for="userName" class="col-sm-3 col-form-label" i18n="@@userName">User Name</label>
+        <div class="col-sm-7">
+          <input formControlName="userName" type="text" class="form-control" placeholder="user name" />
+          <span *ngIf="getUserName.dirty && getUserName.invalid">
+              This is a required field and should not exceed 12 characters.
+          </span>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="language" class="col-sm-3 control-label" i18n="@@language">Language</label>
+        <div class="col-sm-7">
+          <select formControlName="language" class="form-control">
+            <option *ngFor="let language of languages" [value]="language">{{language}}</option>
+          </select>
+          <span *ngIf="getLanguage.dirty && getLanguage.invalid">
+            This is a required field.
+          </span>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="theme" class="col-sm-3 control-label" i18n="@@theme">Theme</label>
+        <div class="col-sm-7">
+          <select formControlName="theme" class="form-control">
+            <option *ngFor="let theme of themes" [value]="theme">{{theme}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-2">
+          <button type="reset"  class="btn btn-primary" (click)="revert()">Cancel</button>
+        </div>
+        <div class="col-sm-5">
+            <button type="submit" class="btn btn-primary" [disabled]="!settingsForm.valid">Save</button>
+          </div>
+      </div>
+    </fieldset>
+  </form>
+  -->
+</div>

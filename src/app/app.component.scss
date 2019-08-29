@@ -1,0 +1,27 @@
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-item:nth-child(1) {
+flex: 0 1 100%;
+}
+
+.flex-item:nth-child(2) {
+flex: 0 1 10%;
+}
+
+.flex-item:nth-child(3) {
+flex: 0 1 89%;
+}
+
+
+.padding_top_10 {
+padding-top: 10px;
+}
+
+.padding_top_5 {
+padding-top: 5px;
+}

@@ -1,0 +1,41 @@
+<div>
+    <div style="display:flex;justify-content:space-between;width:50%;margin-top:10px;">
+      <div>{{pageTitle}}</div>
+      <div style="display: flex;">
+        <div style="width: 50px;"><a [routerLink]= "['/addTask']"><fa-icon [icon]="faPlusCircle" size="lg"></fa-icon></a></div>
+        <div style="width: 50px;"><a [routerLink]= "['/task']"><fa-icon [icon]="faEdit" size="lg"></fa-icon></a></div>
+        <div style="width: 50px;"><a [routerLink]= "['/task']"><fa-icon [icon]="faMinusCircle" size="lg"></fa-icon></a></div>
+      </div>
+    </div>
+
+    <div class='card' style="width:50%;">
+        <div class='card-header'></div>
+        <div class='card-body'>
+          <div class='table-responsive'>
+            <table class='table' style="width:100%;">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Priority</th>
+                  <th>Description</th>
+                  <th>Status</th>
+                  <th>Due Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor='let taskItem of tasksList'>
+                  <td><a [routerLink]= "['/addTask', taskItem.taskId]">{{ taskItem.taskId }}</a></td>
+                  <td>{{ taskItem.priority }}</td>
+                  <td>{{ taskItem.description }}</td>
+                  <td>{{ taskItem.status }}</td>
+                    <!-- {{ product.productCode | lowercase | convertToSpaces: '-' }} -->
+                    <!-- {{ product.price | currency:'USD':'symbol':'1.2-2' }} -->
+                  <td>{{ taskItem.dueDate }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+</div>

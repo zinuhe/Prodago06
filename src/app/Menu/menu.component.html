@@ -1,0 +1,18 @@
+<div>
+  <!-- Material -->
+  <mat-nav-list style=" border-right: 1px solid gray;">
+    <a mat-list-item>
+      <mat-icon>dashboard</mat-icon><a [routerLink]="['/dashboard']" i18n="@@Dashboard">Dashboard</a>
+    </a>
+    <a mat-list-item>
+      <mat-icon>content_paste</mat-icon><a [routerLink]= "['/task']" i18n="@@Task">Task</a>
+    </a>
+    <a mat-list-item>
+      <mat-icon>library_books</mat-icon><a [routerLink]= "['/reports']" i18n="@@Reports">Reports</a>
+    </a>
+    <a mat-list-item>
+      <mat-icon>settings</mat-icon><a [routerLink]= "['/settings']" i18n="@@Settings">Settings</a>
+    </a>
+  </mat-nav-list>
+
+</div>
